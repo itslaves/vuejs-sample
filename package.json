@@ -52,7 +52,14 @@
       "eslint:recommended",
       "@vue/airbnb"
     ],
-    "rules": {},
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "Vue"
+        }
+      ]
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }
